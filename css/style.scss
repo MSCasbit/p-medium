@@ -1,0 +1,85 @@
+.container-fluid{
+    width: 100%;
+    padding: 270px;
+    padding-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+li{
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 10px;
+ 
+    
+}
+li:hover{
+    color: black;
+}
+li img{
+    margin: auto;
+    
+}
+.btn-group img{
+    cursor: pointer;
+    background-color: #ffffff;
+    position: relative;
+    right: -79px;
+    top: -16px;
+
+
+}
+
+
+
+#btn1{
+    height: 25px;
+    margin-right: 16px;
+    margin-top: 5px;
+    margin-left: 16px;
+    padding: 0px;
+    width: 65px;
+    font-size: 12px;
+
+}
+.svgIcon-use{
+    width: 80px;
+}
+img #imageess{
+    position: relative;
+    right: 11px;
+    width: 310px;
+    height: 131px;
+}
+
+#carrusel{
+    padding-right: 47px;
+    padding-left: 47px;
+    position: sticky;
+}
+
+#header1{
+    padding:10px;
+}
+#second-card{
+    border: none;
+}
+.card-body{
+    & a{
+        font-size: 13px;
+    }
+}
+    .lix{
+        overflow-x: hidden;
+        width: 800px;
+    }
+.aside{
+    position:sticky;
+    top: 0;
+}
+.imageess{
+    position: relative;
+    width: 300px;
+    height: 100px;
+}
+
