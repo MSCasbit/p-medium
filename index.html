@@ -14,77 +14,108 @@
 
 <body>
 
-  <div class="container">
-    <header id="header1" class="row p-3">
-      <div class="col-4">
-        <a href="https://medium.com/"><svg class="svgIcon-use" height="22" width="112" viewBox="0 0 111.5 22">
-            <path
-              d="M56.3 19.5c0 .4 0 .5.3.7l1.5 1.4v.1h-6.5V19c-.7 1.8-2.4 3-4.3 3-3.3 0-5.8-2.6-5.8-7.5 0-4.5 2.6-7.6 6.3-7.6 1.6-.1 3.1.8 3.8 2.4V3.2c0-.3-.1-.6-.3-.7l-1.4-1.4V1l6.5-.8v19.3zm-4.8-.8V9.5c-.5-.6-1.2-.9-1.9-.9-1.6 0-3.1 1.4-3.1 5.7 0 4 1.3 5.4 3 5.4.8.1 1.6-.3 2-1zm9.1 3.1V9.4c0-.3-.1-.6-.3-.7l-1.4-1.5v-.1h6.5v12.5c0 .4 0 .5.3.7l1.4 1.4v.1h-6.5zm-.2-19.2C60.4 1.2 61.5 0 63 0c1.4 0 2.6 1.2 2.6 2.6S64.4 5.3 63 5.3c-1.5 0-2.6-1.2-2.6-2.7zm22.5 16.9c0 .4 0 .5.3.7l1.5 1.4v.1h-6.5v-3.2c-.6 2-2.4 3.4-4.5 3.4-2.9 0-4.4-2.1-4.4-6.2 0-1.9 0-4.1.1-6.5 0-.3-.1-.5-.3-.7L67.7 7v.1H74v8c0 2.6.4 4.4 2 4.4.9-.1 1.7-.6 2.1-1.3V9.5c0-.3-.1-.6-.3-.7l-1.4-1.5v-.2h6.5v12.4zm22 2.3c0-.5.1-6.5.1-7.9 0-2.6-.4-4.5-2.2-4.5-.9 0-1.8.5-2.3 1.3.2.8.3 1.7.3 2.5 0 1.8-.1 4.2-.1 6.5 0 .3.1.5.3.7l1.5 1.4v.1H96c0-.4.1-6.5.1-7.9 0-2.7-.4-4.5-2.2-4.5-.9 0-1.7.5-2.2 1.3v9c0 .4 0 .5.3.7l1.4 1.4v.1h-6.5V9.5c0-.3-.1-.6-.3-.7l-1.4-1.5v-.2h6.5v3.1c.6-2.1 2.5-3.5 4.6-3.4 2.2 0 3.6 1.2 4.2 3.5.7-2.1 2.7-3.6 4.9-3.5 2.9 0 4.5 2.2 4.5 6.2 0 1.9-.1 4.2-.1 6.5-.1.3.1.6.3.7l1.4 1.4v.1h-6.6zm-81.4-2l1.9 1.9v.1h-9.8v-.1l2-1.9c.2-.2.3-.4.3-.7V7.3c0-.5 0-1.2.1-1.8L11.4 22h-.1L4.5 6.8c-.1-.4-.2-.4-.3-.6v10c-.1.7 0 1.3.3 1.9l2.7 3.6v.1H0v-.1L2.7 18c.3-.6.4-1.3.3-1.9v-11c0-.5-.1-1.1-.5-1.5L.7 1.1V1h7l5.8 12.9L18.6 1h6.8v.1l-1.9 2.2c-.2.2-.3.5-.3.7v15.2c0 .2.1.5.3.6zm7.6-5.9c0 3.8 1.9 5.3 4.2 5.3 1.9.1 3.6-1 4.4-2.7h.1c-.8 3.7-3.1 5.5-6.5 5.5-3.7 0-7.2-2.2-7.2-7.4 0-5.5 3.5-7.6 7.3-7.6 3.1 0 6.4 1.5 6.4 6.2v.8h-8.7zm0-.8h4.3v-.8c0-3.9-.8-4.9-2-4.9-1.4.1-2.3 1.6-2.3 5.7z">
-            </path>
-          </svg></a>
-      </div>
-      <div class="col-8 d-flex justify-content-end m-auto">
-        <ul class="nav align-items-center">
-          <li class="nav-item mx-3">
-            <img width="20px" src="images/lupa.svg" alt="search">
-          </li>
-          <li class="nav-item d-none d-md-inline mr-3">
-            <img width="20px" src="images/guardado.svg" alt="">
-          </li>
-          <li class="nav-item mr-3">
-            <img width="20px" src="images/campanita.svg" alt="">
-          </li>
-          <li class="nav-item d-none d-md-inline mr-3">
-            <button id="btn1" type="button" class="btn btn-outline-secondary text-dark text-small">Upgrade</button>
-          </li>
-          <li>
-            <img class="ml-auto" width="35px"
-              src="https://www.fotoefectos.com/i/5892_marco-recortar-fotos-un-circulo-gratis.jpg" alt="">
-          </li>
-        </ul>
+  <div class="container p-0">
+    <header id="header1" class="row mb-2 p-0 ml-2 mt-2">
+      <div class="firsth d-flex">
+        <div class="col-4">
+          <a href="https:medium.com"><svg class="svgIcon-use d-md-none" width="45" height="45">
+              <path
+                d="M5 40V5h35v35H5zm8.56-12.627c0 .555-.027.687-.318 1.03l-2.457 2.985v.396h6.974v-.396l-2.456-2.985c-.291-.343-.344-.502-.344-1.03V18.42l6.127 13.364h.714l5.256-13.364v10.644c0 .29 0 .342-.185.528l-1.848 1.796v.396h9.19v-.396l-1.822-1.796c-.184-.186-.21-.238-.21-.528V15.937c0-.291.026-.344.21-.528l1.823-1.797v-.396h-6.471l-4.622 11.542-5.203-11.542h-6.79v.396l2.14 2.64c.239.292.291.37.291.768v10.353z">
+              </path>
+            </svg>
+            <a href="https://medium.com/"><svg class="svgIcon-use d-none d-md-inline" height="22" width="112"
+                viewBox="0 0 111.5 22">
+                <path
+                  d="M56.3 19.5c0 .4 0 .5.3.7l1.5 1.4v.1h-6.5V19c-.7 1.8-2.4 3-4.3 3-3.3 0-5.8-2.6-5.8-7.5 0-4.5 2.6-7.6 6.3-7.6 1.6-.1 3.1.8 3.8 2.4V3.2c0-.3-.1-.6-.3-.7l-1.4-1.4V1l6.5-.8v19.3zm-4.8-.8V9.5c-.5-.6-1.2-.9-1.9-.9-1.6 0-3.1 1.4-3.1 5.7 0 4 1.3 5.4 3 5.4.8.1 1.6-.3 2-1zm9.1 3.1V9.4c0-.3-.1-.6-.3-.7l-1.4-1.5v-.1h6.5v12.5c0 .4 0 .5.3.7l1.4 1.4v.1h-6.5zm-.2-19.2C60.4 1.2 61.5 0 63 0c1.4 0 2.6 1.2 2.6 2.6S64.4 5.3 63 5.3c-1.5 0-2.6-1.2-2.6-2.7zm22.5 16.9c0 .4 0 .5.3.7l1.5 1.4v.1h-6.5v-3.2c-.6 2-2.4 3.4-4.5 3.4-2.9 0-4.4-2.1-4.4-6.2 0-1.9 0-4.1.1-6.5 0-.3-.1-.5-.3-.7L67.7 7v.1H74v8c0 2.6.4 4.4 2 4.4.9-.1 1.7-.6 2.1-1.3V9.5c0-.3-.1-.6-.3-.7l-1.4-1.5v-.2h6.5v12.4zm22 2.3c0-.5.1-6.5.1-7.9 0-2.6-.4-4.5-2.2-4.5-.9 0-1.8.5-2.3 1.3.2.8.3 1.7.3 2.5 0 1.8-.1 4.2-.1 6.5 0 .3.1.5.3.7l1.5 1.4v.1H96c0-.4.1-6.5.1-7.9 0-2.7-.4-4.5-2.2-4.5-.9 0-1.7.5-2.2 1.3v9c0 .4 0 .5.3.7l1.4 1.4v.1h-6.5V9.5c0-.3-.1-.6-.3-.7l-1.4-1.5v-.2h6.5v3.1c.6-2.1 2.5-3.5 4.6-3.4 2.2 0 3.6 1.2 4.2 3.5.7-2.1 2.7-3.6 4.9-3.5 2.9 0 4.5 2.2 4.5 6.2 0 1.9-.1 4.2-.1 6.5-.1.3.1.6.3.7l1.4 1.4v.1h-6.6zm-81.4-2l1.9 1.9v.1h-9.8v-.1l2-1.9c.2-.2.3-.4.3-.7V7.3c0-.5 0-1.2.1-1.8L11.4 22h-.1L4.5 6.8c-.1-.4-.2-.4-.3-.6v10c-.1.7 0 1.3.3 1.9l2.7 3.6v.1H0v-.1L2.7 18c.3-.6.4-1.3.3-1.9v-11c0-.5-.1-1.1-.5-1.5L.7 1.1V1h7l5.8 12.9L18.6 1h6.8v.1l-1.9 2.2c-.2.2-.3.5-.3.7v15.2c0 .2.1.5.3.6zm7.6-5.9c0 3.8 1.9 5.3 4.2 5.3 1.9.1 3.6-1 4.4-2.7h.1c-.8 3.7-3.1 5.5-6.5 5.5-3.7 0-7.2-2.2-7.2-7.4 0-5.5 3.5-7.6 7.3-7.6 3.1 0 6.4 1.5 6.4 6.2v.8h-8.7zm0-.8h4.3v-.8c0-3.9-.8-4.9-2-4.9-1.4.1-2.3 1.6-2.3 5.7z">
+                </path>
+              </svg></a>
+        </div>
+        <div class="col-8 d-flex justify-content-end  marge">
+          <ul class="nav align-items-center">
+            <li class="nav-item mx-2 mb-1">
+              <img width="22px" src="images/search1 (3).svg" alt="search">
+            </li>
+            <li class="nav-item d-none d-md-inline mr-3">
+              <img width="20px" src="images/bookmark1 (3).svg" alt="">
+            </li>
+            <li class="nav-item mr-2 mb-1 ml-1">
+              <img width="22px" src="images/notification1 (2).svg" alt="">
+            </li>
+            <li class="nav-item d-none d-md-inline mr-3">
+              <button id="btn1" type="button" class="btn btn-outline-secondary text-dark text-small">Upgrade</button>
+            </li>
+            <li>
+              <img class="mb-2" width="35px" height="35px" src="images/pngocean.com (3).png" alt="">
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-    <div class="row p-0 sticky-top bg-white pt-3">
-      <nav id="carrusel" class="col-12">
-        <ul class="d-flex justify-content-center justify-content-between text-muted p-0">
+    <div class="row p-0 sticky-top bg-white pt-0">
+      <nav class="col-12 carrusel">
+        <ul class="d-flex justify-content-center justify-content-between p-0">
           <ul class="p-0">
-            <li>&#10092;</li>
+            <li><img class="arrows" width="20px" src="images/flecha1.svg" alt="arrow1"></li>
           </ul>
-          <ul class="d-flex lix p-0 justify-content-center">
-            <li class="mx-3">HOME</li>
-            <li class="mx-3">CORONAVIRUS</li>
-            <li class="mx-3">POPULAR</li>
-            <li class="mx-3">ONEZERO</li>
-            <li class="mx-3">ELEMENTAL</li>
-            <li class="mx-3">GEN</li>
-            <li class="mx-3">ZORA</li>
-            <li class="mx-3">FORGE</li>
-            <li class="mx-3">HUMAN</li>
-            <li class="mx-3">MARKER</li>
-            <li class="mx-3">LEVEL</li>
-            <li class="mx-3">HEATED</li>
+          <ul class="d-flex lix p-0 justify-content-center screen mt-2">
+            <li class="mx-2 sizetext">HOME</li>
+            <li class="mx-2 sizetext">CORONAVIRUS</li>
+            <li class="mx-2 sizetext">POPULAR</li>
+            <li class="mx-2 sizetext">ONEZERO</li>
+            <li class="mx-2 sizetext">ELEMENTAL</li>
+            <li class="mx-2 sizetext">GEN</li>
+            <li class="mx-2 sizetext">ZORA</li>
+            <li class="mx-2 sizetext">FORGE</li>
+            <li class="mx-2 sizetext">HUMAN</li>
+            <li class="mx-2 sizetext">MARKER</li>
+            <li class="mx-2 sizetext">LEVEL</li>
+            <li class="mx-2 sizetext">HEATED</li>
           </ul>
           <ul class="p-0">
-            <li>&#10093;</li>
+            <li><img class="arrow" width="20px" src="images/flecha2.svg" alt="arrow2"></li>
           </ul>
         </ul>
       </nav>
 
     </div>
     <!--<div class="container">-->
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="card-mb-3">
-            <div class="row no-gutters d-flex ">
-              <div class="col-mb-4">
-                <img class="imageess" width="100%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRo4zDGbkhQGY_CqGFpCbCWvyXyHIqth5ejzguylW51YqgRQxwl&usqp=CAU"
-                  alt="">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="card-mb-3">
+          <div class="row no-gutters d-flex ">
+            <div class="col-mb-4">
+              <img class="imageess"
+                  src="https://images.unsplash.com/photo-1588910441757-9deb5c627a19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                  alt="atardecer">
+            </div>
+            <div class="col-mb-8 ml-4">
+              <p class="Card Title font-weight-bold ">The Best Reading to Deepen Your Relationship to Sourdough</p>
+              <p class="cardtext">How a seemingly slow way of working quickly becomes much faster.
+              </p>
+              <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
+                in </span>
+              <a class="text-dark small" href="https://medium.com/">Tinder</a>
+              <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
+                class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
+                read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
+              <div class="btn-group">
+                <img width="23px" src="images/more_horiz-24px (1).svg" alt="dotts">
               </div>
-              <div class="col-mb-8 ml-4">
-                <p class="Card Title font-weight-bold ">The Best Reading to Deepen Your Relationship to Sourdough</p>
-                <p class="cardtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, placeat.
-                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div id="second-card" class="card mb-3">
+          <div class="row no-gutters d-flex align-items-center  flex-row-reverse flex-md-row">
+            <div class="col-4">
+              <img width="100%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR72cjfAH0z-4huizS5gApjTjbybXxPoEbyI357gpjYevYh0DTl&usqp=CAU"
+                class="card-img" alt="">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
                 <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
                   in </span>
                 <a class="text-dark small" href="https://medium.com/">Tinder</a>
@@ -92,229 +123,217 @@
                   class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
                   read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
                 <div class="btn-group">
-                  <img width="23px" src="images/puntitos1.svg" alt="dotts">
+                  <img src="images/more_horiz-24px.svg" alt="dotts">
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div id="second-card" class="card mb-3">
-            <div class="row no-gutters d-flex align-items-center  flex-row-reverse flex-md-row">
-              <div class="col-4">
-                <img width="100%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR72cjfAH0z-4huizS5gApjTjbybXxPoEbyI357gpjYevYh0DTl&usqp=CAU"
-                  class="card-img" alt="">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
-                  <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span
-                    class="text-dark small"> in </span>
-                  <a class="text-dark small" href="https://medium.com/">Tinder</a>
-                  <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
-                    class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
-                    read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
-                  <div class="btn-group">
-                    <img src="images/more_horiz-24px.svg" alt="dotts">
-                  </div>
+            <div class="col-4">
+              <img width="50%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFLMYWKDhUL0OTOoP1s4XQzQKNz_c4KDkApiA1jphdJXnFbcNS&usqp=CAU"
+                class="card-img" alt="">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
+                  in </span>
+                <a class="text-dark small" href="https://medium.com/">Tinder</a>
+                <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
+                  class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
+                  read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
+                <div class="btn-group">
+                  <img src="images/more_horiz-24px.svg" alt="dotts">
                 </div>
-              </div>
-              <div class="col-4">
-                <img width="50%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFLMYWKDhUL0OTOoP1s4XQzQKNz_c4KDkApiA1jphdJXnFbcNS&usqp=CAU"
-                  class="card-img" alt="">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                  <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span
-                    class="text-dark small"> in </span>
-                  <a class="text-dark small" href="https://medium.com/">Tinder</a>
-                  <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
-                    class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
-                    read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
-                  <div class="btn-group">
-                    <img src="images/more_horiz-24px.svg" alt="dotts">
-                  </div>
 
-                </div>
-              </div>
-              <div class="col-4">
-                <img width="50%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRo4zDGbkhQGY_CqGFpCbCWvyXyHIqth5ejzguylW51YqgRQxwl&usqp=CAU"
-                  class="card-img" alt="">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                  <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span
-                    class="text-dark small"> in </span>
-                  <a class="text-dark small" href="https://medium.com/">Tinder</a>
-                  <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
-                    class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
-                    read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
-                  <div class="btn-group">
-                    <img src="images/more_horiz-24px.svg" alt="dotts">
-                  </div>
-                  <p class="card-text">
-                  </p>
-                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card-mb-3">
-            <div class="row no-gutters">
-              <div class="col-mb-4">
-                <img width="100%"
-                  src="https://http2.mlstatic.com/juego-de-repisas-cuadradas-3-piezas-mdf-D_NQ_NP_995503-MLM26929239552_022018-F.jpg"
-                  alt="">
-              </div>
-              <div class="col-mb-8">
-                <h5 class="Card Title">Card title</h5>
-                <p class="cardtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, placeat.
+            <div class="col-4">
+              <img width="50%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRo4zDGbkhQGY_CqGFpCbCWvyXyHIqth5ejzguylW51YqgRQxwl&usqp=CAU"
+                class="card-img" alt="">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
+                  in </span>
+                <a class="text-dark small" href="https://medium.com/">Tinder</a>
+                <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
+                  class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
+                  read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
+                <div class="btn-group">
+                  <img src="images/more_horiz-24px.svg" alt="dotts">
+                </div>
+                <p class="card-text">
                 </p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
+      <div class="col-12 col-md-4">
+        <div class="card-mb-3">
+          <div class="row no-gutters">
+            <div class="col-mb-4">
+              <img width="100%"
+                src="https://http2.mlstatic.com/juego-de-repisas-cuadradas-3-piezas-mdf-D_NQ_NP_995503-MLM26929239552_022018-F.jpg"
+                alt="">
+            </div>
+            <div class="col-mb-8">
+              <h5 class="Card Title">Card title</h5>
+              <p class="cardtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, placeat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <!--</div>-->
     <div class=" text-right">
       <a class="text-success small" href="#">SEE EDITOR’S PICKS ></a>
     </div>
     <hr>
     <!--<div class="container">-->
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <div id="second-card" class="card mb-3">
-            <div class="row no-gutters d-flex align-items-center flex-row-reverse mb-3">
-              <div class="col-4">
-                <img width="100%"
-                  src="https://http2.mlstatic.com/juego-de-repisas-cuadradas-3-piezas-mdf-D_NQ_NP_995503-MLM26929239552_022018-F.jpg"
-                  class="card-img" alt="">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                  <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span
-                    class="text-dark small"> in </span>
-                  <a class="text-dark small" href="https://medium.com/">Tinder</a>
-                  <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
-                    class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
-                    read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
-                  <div class="btn-group">
-                    <img src="images/more_horiz-24px.svg" alt="dotts">
-                  </div>
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <div id="second-card" class="card mb-3">
+          <div class="row no-gutters d-flex align-items-center flex-row-reverse mb-3">
+            <div class="col-4">
+              <img width="100%"
+                src="https://http2.mlstatic.com/juego-de-repisas-cuadradas-3-piezas-mdf-D_NQ_NP_995503-MLM26929239552_022018-F.jpg"
+                class="card-img" alt="">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
+                  in </span>
+                <a class="text-dark small" href="https://medium.com/">Tinder</a>
+                <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
+                  class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
+                  read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
+                <div class="btn-group">
+                  <img src="images/more_horiz-24px.svg" alt="dotts">
                 </div>
               </div>
-              <div class="col-4">
-                <img width="50%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0OWE2NzYve2oTAGshMkaJlC5SZnnYkmZM4WOXk3Uo4pZHXgjz&usqp=CAU"
-                  class="card-img" alt="">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                  <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span
-                    class="text-dark small"> in </span>
-                  <a class="text-dark small" href="https://medium.com/">Tinder</a>
-                  <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
-                    class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
-                    read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
-                  <div class="btn-group">
-                    <img src="images/more_horiz-24px.svg" alt="dotts">
-                  </div>
+            </div>
+            <div class="col-4">
+              <img width="50%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0OWE2NzYve2oTAGshMkaJlC5SZnnYkmZM4WOXk3Uo4pZHXgjz&usqp=CAU"
+                class="card-img" alt="">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
+                  in </span>
+                <a class="text-dark small" href="https://medium.com/">Tinder</a>
+                <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
+                  class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
+                  read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
+                <div class="btn-group">
+                  <img src="images/more_horiz-24px.svg" alt="dotts">
+                </div>
 
+              </div>
+            </div>
+            <div class="col-4">
+              <img width="50%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJKZZQOeSizp9VsaKL_WzyyYCbyguaKrg1XwG5ySowB5Ez2unX&usqp=CAU"
+                class="card-img" alt="">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
+                  in </span>
+                <a class="text-dark small" href="https://medium.com/">Tinder</a>
+                <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
+                  class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
+                  read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
+                <div class="btn-group">
+                  <img src="images/more_horiz-24px.svg" alt="dotts">
                 </div>
-              </div>
-              <div class="col-4">
-                <img width="50%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJKZZQOeSizp9VsaKL_WzyyYCbyguaKrg1XwG5ySowB5Ez2unX&usqp=CAU"
-                  class="card-img" alt="">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                  <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span
-                    class="text-dark small"> in </span>
-                  <a class="text-dark small" href="https://medium.com/">Tinder</a>
-                  <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
-                    class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
-                    read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
-                  <div class="btn-group">
-                    <img src="images/more_horiz-24px.svg" alt="dotts">
-                  </div>
 
+              </div>
+            </div>
+            <div class="col-4">
+              <img width="100%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRc0xxsDOGHYnhm0tv_u1VctFmyAcoaFjRoijX8wxMWPoTymcVp&usqp=CAU"
+                class="card-img" alt="">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
+                  in </span>
+                <a class="text-dark small" href="https://medium.com/">Tinder</a>
+                <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
+                  class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
+                  read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
+                <div class="btn-group">
+                  <img class="mb-3" src="images/more_horiz-24px.svg" alt="dotts">
                 </div>
               </div>
-              <div class="col-4">
-                <img width="100%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRc0xxsDOGHYnhm0tv_u1VctFmyAcoaFjRoijX8wxMWPoTymcVp&usqp=CAU"
-                  class="card-img" alt="">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                  <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span
-                    class="text-dark small"> in </span>
-                  <a class="text-dark small" href="https://medium.com/">Tinder</a>
-                  <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
-                    class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
-                    read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
-                  <div class="btn-group">
-                    <img class="mb-3" src="images/more_horiz-24px.svg" alt="dotts">
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <img width="100%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFc4qRmDR27EwXRGI64WI8a6vOLkLP4RbzvDMp5Ulv2yHM3RMF&usqp=CAU"
-                  class="card-img" alt="">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                  <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span
-                    class="text-dark small"> in </span>
-                  <a class="text-dark small" href="https://medium.com/">Tinder</a>
-                  <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
-                    class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
-                    read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
-                  <div class="btn-group">
-                    <img src="images/more_horiz-24px.svg" alt="dotts">
-                  </div>
+            </div>
+            <div class="col-4">
+              <img width="100%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFc4qRmDR27EwXRGI64WI8a6vOLkLP4RbzvDMp5Ulv2yHM3RMF&usqp=CAU"
+                class="card-img" alt="">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                <a class="text-dark small" href="https://medium.com/">Alicia Villareal</a><span class="text-dark small">
+                  in </span>
+                <a class="text-dark small" href="https://medium.com/">Tinder</a>
+                <br><time class="u-inlineBlock u-lineHeightBase text-muted small">a few hours ago</time><span
+                  class="text-muted small"> <img width="6px" src="images/primitive-dot (1).svg" alt=""> 3 min
+                  read </span><span> <img width="8px" src="images/star (1).svg" alt=""> </span>
+                <div class="btn-group">
+                  <img src="images/more_horiz-24px.svg" alt="dotts">
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-12 col-md-4 aside">
-          <div class="title d-flex justify-content-start ">
-            <h4 class="text-right ">Card Title</h4>
+      <div class="col-12 col-md-4 aside">
+        <div class="title d-flex justify-content-start ">
+          <h4 class="text-right ">Card Title</h4>
+        </div>
+        <hr>
+        <div class="card-mb-3">
+          <div class="row no-gutters d-flex ">
+            <div class="col-md-4">
+              <h1 class="numbers-top text-right" style="color: #d9d9d9;">01</h1>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+              </div>
+            </div>
           </div>
-          <hr>
           <div class="card-mb-3">
-            <div class="row no-gutters d-flex ">
+            <div class="row no-gutters d-flex">
               <div class="col-md-4">
-                <h1 class="numbers-top text-right" style="color: #d9d9d9;">01</h1>
+                <h1 class="numbers-top text-right" style="color: #d9d9d9;">02</h1>
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
                 </div>
               </div>
             </div>
             <div class="card-mb-3">
               <div class="row no-gutters d-flex">
                 <div class="col-md-4">
-                  <h1 class="numbers-top text-right" style="color: #d9d9d9;">02</h1>
+                  <h1 class="numbers-top text-right" style="color: #d9d9d9;">03</h1>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -326,7 +345,7 @@
               <div class="card-mb-3">
                 <div class="row no-gutters d-flex">
                   <div class="col-md-4">
-                    <h1 class="numbers-top text-right" style="color: #d9d9d9;">03</h1>
+                    <h1 class="numbers-top text-right" style="color: #d9d9d9;">04</h1>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -335,35 +354,23 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-mb-3">
-                  <div class="row no-gutters d-flex">
-                    <div class="col-md-4">
-                      <h1 class="numbers-top text-right" style="color: #d9d9d9;">04</h1>
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-
-              <ul class="d-flex justify-content-center justify-content-between text-muted p-0 border-top p-3">
-                <li><a class="text-muted" href="3">Help</a></li>
-                <li><a class="text-muted" href="3">Status</a></li>
-                <li><a class="text-muted" href="3">Writers</a></li>
-                <li><a class="text-muted" href="3">Love</a></li>
-                <li><a class="text-muted" href="3">Carrers</a></li>
-                <li><a class="text-muted" href="3">Privacy</a></li>
-                <li><a class="text-muted" href="3">Terms</a></li>
-                <li><a class="text-muted" href="3">About</a></li>
-              </ul>
             </div>
+
+            <ul class="d-flex justify-content-center justify-content-between text-muted p-0 border-top p-3">
+              <li><a class="text-muted" href="3">Help</a></li>
+              <li><a class="text-muted" href="3">Status</a></li>
+              <li><a class="text-muted" href="3">Writers</a></li>
+              <li><a class="text-muted" href="3">Love</a></li>
+              <li><a class="text-muted" href="3">Carrers</a></li>
+              <li><a class="text-muted" href="3">Privacy</a></li>
+              <li><a class="text-muted" href="3">Terms</a></li>
+              <li><a class="text-muted" href="3">About</a></li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
     <!--</div>-->
   </div>
 
