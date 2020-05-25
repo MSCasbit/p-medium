@@ -6,12 +6,31 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-.container-fluid{
+/*.container{
     width: 100%;
     padding: 270px;
     padding-top: 0;
     margin-right: auto;
     margin-left: auto;
+}*/
+.icons{
+    width: 24px;
+    margin-right: 12px;
+}
+.icons:hover{
+    cursor: pointer;
+}
+.btnbtn{
+    font-size: 12px;
+    padding: 0px 14px;
+    margin-right: 12px;
+    background:white;
+    border-radius: 4px;
+    border: 1px solid rgb(100, 100, 100);
+    height: 32px;
+}
+.photo{
+    width: 35px;
 }
 li{
     list-style: none;
@@ -46,55 +65,96 @@ li img{
 
 }
 .svgIcon-use{
-    width: 80px;
+    width: 120px;
 }
 
 .carrusel{
-    padding-right: 12px;
-    padding-left: 41px;
+    
     position: sticky;
 }
 
-#header1{
+.header1{
+   
     padding:10px;
 }
 #second-card{
     border: none;
 }
-.card-body{
-    & a{
-        font-size: 13px;
-    }
+
+.user{
+        font-size: 9px;    
 }
-    .lix{
-        overflow-x: hidden;
+
+.lix{
+        overflow: hidden;
         width: 800px;
     }
+
 .aside{
     position:sticky;
     top: 0;
 }
-.imageess{
+.imageess {
     position: relative;
     width: 100%;
     height: 150px;
     margin: 12px;
-    object-fit: cover;   
-}
-.sizetext{
+    margin-top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card-title{
+    font-size: 16px;
+  }
+  .text-card{
     font-size: 14px;
+    color: gray;
+  }
+  .btn-group{
+    position: relative;
+    padding-right: 50px;
+  }
+  /*.btn-group2{
+    position: relative;
+    padding-left: 170px;
+  }*/
+.sizetext{
+    font-size: 13px;
     color: black;
 }
 .marge{
-    margin-left: 78px;
+    margin-left: 68px;
 }
 .arrows{
     margin-top: 8px;
-    margin-right: 15px;
+    
 }
 .arrow{
     margin-top: 8px;
-    margin-left: 15px;
+    
 }
+.textA{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.dotts{
+    width: 20px;
+    margin-left: 35px;
+}
+.asaide{
+    position: -webkit-sticky;
+    position: sticky;
+    top:50px
+}
+
+.spam{
+    background-color: rgb(247, 245, 247);
+}
+.about{
+    font-size: 14px;
+}
+
+
 
 
