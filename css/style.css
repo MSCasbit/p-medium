@@ -7,13 +7,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*.container{
-    width: 100%;
-    padding: 270px;
-    padding-top: 0;
-    margin-right: auto;
-    margin-left: auto;
-}*/
 .icons {
   width: 24px;
   margin-right: 12px;
@@ -128,10 +121,6 @@ li img {
   padding-right: 50px;
 }
 
-/*.btn-group2{
-    position: relative;
-    padding-left: 170px;
-  }*/
 .sizetext {
   font-size: 13px;
   color: black;
