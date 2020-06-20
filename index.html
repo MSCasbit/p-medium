@@ -14,8 +14,27 @@
 </head>
 
 <body>
-
-    <div class="container">
+    <div class="modal fade bg-success" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">Medium dice: </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tu post se ha publicado exitosamente<span class="order-id text-success"></span>
+                </div>
+                <div class="modal-footer">
+                    <button id="buttonS" type="button" class="btn btn-primary" data-toggle="modal" data-target="confirmModal">Gracias!</button>
+                </div>
+            </div>
+        </div>
+        <img id="hand" src="images/hand.svg" alt="">
+    </div>
+    <div id="allContent" class="container">
         <header class="d-flex justify-content-between p-4 pt-0">
             <div>
                 <svg class="d-md-none svgIcon-use" width="45" height="45">
@@ -33,7 +52,7 @@
                 <img class="icons" src="images/search1 (3).svg" alt="lupita">
                 <img class="d-none d-md-inline icons" src="images/bookmark1 (3).svg" alt="banderita">
                 <img class="icons" src="images/notification1 (2).svg" alt="campanita">
-                <button class="d-none d-md-inline btnbtn">Upgrade</button>
+                <button class="d-none d-md-inline btnbtn" onclick="loadPage()">Upgrade</button>
                 <img class="photo" src="images/pngocean.com (3).png" alt="un vato"></div>
         </header>
         <div class="row p-0 sticky-top bg-white pt-0">
@@ -63,12 +82,13 @@
             </nav>
 
         </div>
+
         <!--<div class="container">-->
-        
-            <!-- second cards -->
-            
-            <!--Card 3-->
-            
+
+        <!-- second cards -->
+
+        <!--Card 3-->
+
         <!--</div>-->
         <div class=" d-flex justify-content-start justify-content-md-end">
             <a class="text-success small" href="#">SEE EDITOR’S PICKS ></a>
@@ -104,7 +124,8 @@
                                 <h5 class="card-title font-weight-bold">Yoda Fans Call For New Trend</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">Good Luck With The Other Claim Tom told us about his new job, and Jim told us about his new girlfriend. After a while</p>
+                                        <p class="text-muted">Good Luck With The Other Claim Tom told us about his new
+                                            job, and Jim told us about his new girlfriend. After a while</p>
                                         <a class="text-dark user" href="https://medium.com/">XmayorTrend</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">warXtrip</a>
@@ -134,7 +155,8 @@
                                 <h5 class="card-title font-weight-bold">The New Drug Store On New Zeland</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">How´s Goona Change The World? We Make The Difference. I had a great weekend. O</p>
+                                        <p class="text-muted">How´s Goona Change The World? We Make The Difference. I
+                                            had a great weekend. O</p>
                                         <a class="text-dark user" href="https://medium.com/">Check Lugger</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">DrugsTorE</a>
@@ -164,7 +186,8 @@
                                 <h5 class="card-title font-weight-bold">Every Body Talks But Anyone Paint...</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text muted">The Important Of Art Pictures, Try It. This weekend was a bit different, though. </p>
+                                        <p class="text muted">The Important Of Art Pictures, Try It. This weekend was a
+                                            bit different, though. </p>
                                         <a class="text-dark user" href="https://medium.com/">veccilin</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">PaintLove</a>
@@ -191,10 +214,12 @@
                         </div>
                         <div class="col-8">
                             <div class="card-body pr-0 pt-0">
-                                <h5 class="card-title font-weight-bold">Milk Cure Cancer And Other Terminal Diseases</h5>
+                                <h5 class="card-title font-weight-bold">Milk Cure Cancer And Other Terminal Diseases
+                                </h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">We Comprube The Milk Have Amino´s That Cure the Diseases Shawn’s family is not very big. His mother and father  </p>
+                                        <p class="text-muted">We Comprube The Milk Have Amino´s That Cure the Diseases
+                                            Shawn’s family is not very big. His mother and father </p>
                                         <a class="text-dark user" href="https://medium.com/">Robert Ansira</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">Cortains</a>
@@ -224,7 +249,8 @@
                                 <h5 class="card-title font-weight-bold">24 Hours To Communicate With Us</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">We Try To Give The Best Personal Attention Shawn’s girlfriend’s name is Maria, and she’s Italian. </p>
+                                        <p class="text-muted">We Try To Give The Best Personal Attention Shawn’s
+                                            girlfriend’s name is Maria, and she’s Italian. </p>
                                         <a class="text-dark user" href="https://medium.com/">Roner Chukron</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">OroGold</a>
@@ -246,15 +272,16 @@
                 <div id="second-card" class="card mb-3">
                     <div class="row no-gutters d-flex align-items-center  flex-row-reverse">
                         <div class="col-4">
-                            <img src="https://avatarfiles.alphacoders.com/822/82242.png"
-                                class="card-img mb-3 w-75" alt="">
+                            <img src="https://avatarfiles.alphacoders.com/822/82242.png" class="card-img mb-3 w-75"
+                                alt="">
                         </div>
                         <div class="col-8">
                             <div class="card-body pr-0 pt-0">
                                 <h5 class="card-title font-weight-bold">"Pa-Pu-Re" The New Remix For YouTubers</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">YouTubers Make A New Remix Called "Pa-Pu-Re Shawn’s girlfriend’s name is Maria, and she’s Italian. </p>
+                                        <p class="text-muted">YouTubers Make A New Remix Called "Pa-Pu-Re Shawn’s
+                                            girlfriend’s name is Maria, and she’s Italian. </p>
                                         <a class="text-dark user" href="https://medium.com/">christian Rodels</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">YouTuBe</a>
@@ -284,7 +311,8 @@
                                 <h5 class="card-title font-weight-bold">AncorDes Gerson What´s That?</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">AncorDes Gerson Makes Shoulders With WiFi Integrate Shawn’s girlfriend’s name is Maria, and she’s Italian. </p>
+                                        <p class="text-muted">AncorDes Gerson Makes Shoulders With WiFi Integrate
+                                            Shawn’s girlfriend’s name is Maria, and she’s Italian. </p>
                                         <a class="text-dark user" href="https://medium.com/">Cole Mcloren</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">A&G</a>
@@ -306,15 +334,16 @@
                 <div id="second-card" class="card mb-3">
                     <div class="row no-gutters d-flex align-items-center  flex-row-reverse">
                         <div class="col-4">
-                            <img src="https://avatarfiles.alphacoders.com/717/71766.jpg"
-                                class="card-img mb-3 w-75" alt="">
+                            <img src="https://avatarfiles.alphacoders.com/717/71766.jpg" class="card-img mb-3 w-75"
+                                alt="">
                         </div>
                         <div class="col-8">
                             <div class="card-body pr-0 pt-0">
                                 <h5 class="card-title font-weight-bold">What The Heck Is Going on in Florida?</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">hen I drive my son to his school. It’s close to my job. My daughter is in the sixth grade and my son is in the second.</p>
+                                        <p class="text-muted">hen I drive my son to his school. It’s close to my job. My
+                                            daughter is in the sixth grade and my son is in the second.</p>
                                         <a class="text-dark user" href="https://medium.com/">Alicia Villareal</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">Tinder</a>
@@ -344,7 +373,8 @@
                                 <h5 class="card-title font-weight-bold">Colors In Cubes Makes Happy To Dogs, Why? </h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">Colors Makes A Good Visual Help To Dogs Because Them Recive Melanicoides hen I drive my son to his school. </p>
+                                        <p class="text-muted">Colors Makes A Good Visual Help To Dogs Because Them
+                                            Recive Melanicoides hen I drive my son to his school. </p>
                                         <a class="text-dark user" href="https://medium.com/">Cesar Colen </a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">DoggiWalker</a>
@@ -374,7 +404,8 @@
                                 <h5 class="card-title font-weight-bold">All White All Table All Wood...</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted">The New Tend Of The People Its The White Wood fter a while I started getting hungry, </p>
+                                        <p class="text-muted">The New Tend Of The People Its The White Wood fter a while
+                                            I started getting hungry, </p>
                                         <a class="text-dark user" href="https://medium.com/">Walter O. Braian</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">Scorpion</a>
@@ -401,7 +432,9 @@
                         </div>
                         <div class="col-8">
                             <div class="card-body pr-0 pt-0">
-                                <h4 class="card-title font-weight-bold">Delivery´s Trend Make´s Crush DHL, UPS ,Amazon... fter a while I started getting hungry, so I decided to get to work on lunch. </h4>
+                                <h4 class="card-title font-weight-bold">Delivery´s Trend Make´s Crush DHL, UPS
+                                    ,Amazon... fter a while I started getting hungry, so I decided to get to work on
+                                    lunch. </h4>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
                                         <a class="text-dark user" href="https://medium.com/">jhon Scutia</a>
@@ -433,7 +466,8 @@
                                 <h5 class="card-title font-weight-bold">What´s The Best Helmet To Ride Motorcycle</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-mute">AGV Its One Of The Best Helmets Than Exist, Do You Wanna Be Safe? You Need AGV play </p>
+                                        <p class="text-mute">AGV Its One Of The Best Helmets Than Exist, Do You Wanna Be
+                                            Safe? You Need AGV play </p>
                                         <a class="text-dark user" href="https://medium.com/">Roler Colapse</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">ForumLands</a>
@@ -460,10 +494,12 @@
                         </div>
                         <div class="col-8">
                             <div class="card-body pr-0 pt-0">
-                                <h5 class="card-title font-weight-bold">Inside the Flour Company Supplying America’s Sudden Baking Obsession</h5>
+                                <h5 class="card-title font-weight-bold">Inside the Flour Company Supplying America’s
+                                    Sudden Baking Obsession</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-mute"> play outside. I like to play. I read a book. I like to read books. I walk home.
+                                        <p class="text-mute"> play outside. I like to play. I read a book. I like to
+                                            read books. I walk home.
                                         </p>
                                         <a class="text-dark user" href="https://medium.com/">Cloe Nelborn</a>
                                         <span class="text-dark user">in</span>
@@ -494,7 +530,8 @@
                                 <h5 class="card-title font-weight-bold">The Federal Reserve Will Buy Stock</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-muted"> play outside. I like to play. I read a book. I like to read books. I walk home.</p>
+                                        <p class="text-muted"> play outside. I like to play. I read a book. I like to
+                                            read books. I walk home.</p>
                                         <a class="text-dark user" href="https://medium.com/">Prom Juliette</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">Cooler Main</a>
@@ -524,8 +561,9 @@
                                 <h5 class="card-title font-weight-bold">3 Insane Secret Weapons for Python</h5>
                                 <div class="btn-group2 d-flex align-items-center justify-content-between">
                                     <div>
-                                        <p class="text-mute">Microsoft Finally Made a Perfect Laptop for Coding, Gaming, and Zooming,Technological Books 
-                                            </p>
+                                        <p class="text-mute">Microsoft Finally Made a Perfect Laptop for Coding, Gaming,
+                                            and Zooming,Technological Books
+                                        </p>
                                         <a class="text-dark user" href="https://medium.com/">Tammy Clastrone</a>
                                         <span class="text-dark user">in</span>
                                         <a class="text-dark user" href="https://medium.com/">Clasmosh</a>
@@ -615,8 +653,8 @@
                         </ul>
                         <ul class="d-flex justify-content-left text-muted p-0 ml-5">
                             <li><a class="text-muted mr-4 about" href="#">Privacy</a></li>
-                            <li><a class="text-muted mr-4 about"href="#">Terms</a></li>
-                            <li><a class="text-muted mr-4 about"href="#">About</a></li>
+                            <li><a class="text-muted mr-4 about" href="#">Terms</a></li>
+                            <li><a class="text-muted mr-4 about" href="#">About</a></li>
                         </ul>
                     </div>
                 </div>
@@ -636,7 +674,7 @@
     </div>
     </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -645,7 +683,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
