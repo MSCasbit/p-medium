@@ -87,7 +87,7 @@ li img {
 }
 
 .lix {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 800px;
 }
 
@@ -168,5 +168,9 @@ li img {
 
 .dotts:hover {
   cursor: pointer;
+}
+
+#next {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

@@ -73,6 +73,7 @@ li img{
 .carrusel{
     
     position: sticky;
+    
 }
 
 .header1{
@@ -89,7 +90,7 @@ li img{
 }
 
 .lix{
-        overflow: hidden;
+        overflow-x: hidden;
         width: 800px;
     }
 
@@ -174,6 +175,7 @@ li img{
  cursor: pointer;
 }
 
-
-
+#next{
+    position: relative;
+}
 
