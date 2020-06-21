@@ -1,19 +1,3 @@
-/*var post = [
-    {
-        imgUrl:"",
-        name:"title post",
-        description:"",
-        autor:"",
-        category:"",
-        date:"",
-        readTime:"",
-}
-
-]*/
-var viewportHeight = window.innerHeight
-
-
-
 // navbar animada 
 $("#horizon-prev").click(function(){
     event.preventDefault();
