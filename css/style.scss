@@ -71,9 +71,9 @@ li img{
 
 }
 
-.svgIcon-use{
+/*.svgIcon-use{
     width: 120px;
-}
+}*/
 
 
 .carrusel{
@@ -179,6 +179,27 @@ li img{
 .dotts:hover{
  cursor: pointer;
 }
+
+/*Formulario*/
+.newPost{
+    background-color: rgb(234, 243, 243);
+
+
+    .form-control{
+        background-color: rgb(226, 226, 226);
+        font-size: 13px;
+    }
+    label{
+        font-weight: bold;
+    }
+    .btn-success{
+        font-size: 13px;
+        font-weight: bold;
+
+    }
+}
+
+
 
 
 
