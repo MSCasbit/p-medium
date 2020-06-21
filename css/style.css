@@ -65,10 +65,9 @@ li img {
   font-size: 12px;
 }
 
-.svgIcon-use {
-  width: 120px;
-}
-
+/*.svgIcon-use{
+    width: 120px;
+}*/
 .carrusel {
   position: -webkit-sticky;
   position: sticky;
@@ -168,5 +167,24 @@ li img {
 
 .dotts:hover {
   cursor: pointer;
+}
+
+/*Formulario*/
+.newPost {
+  background-color: #eaf3f3;
+}
+
+.newPost .form-control {
+  background-color: #e2e2e2;
+  font-size: 13px;
+}
+
+.newPost label {
+  font-weight: bold;
+}
+
+.newPost .btn-success {
+  font-size: 13px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
