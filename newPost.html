@@ -29,7 +29,7 @@
                 Tu post se ha publicado exitosamente<span class="order-id text-success"></span>
             </div>
             <div class="modal-footer">
-                <button id="buttonS" type="button" class="btn btn-primary" data-toggle="modal">¡Gracias!</button>
+                <button type="button" class="btn btn-info" data-dismiss="modal">¡Gracias!</button>
             </div>
         </div>
     </div>    
@@ -62,7 +62,7 @@
         <div class="col-12 col-md-6">
           <form id= "newPostForm" class="mt-5">
             <div class="form-group">
-              <label for="imageurl">URL Image</label>
+              <label for="">URL Image</label>
               <input
                 type="url"
                 class="form-control"
@@ -126,8 +126,7 @@
             <button
               type="button"
               class="btn btn-info"
-              data-toggle="modal"
-              data-target="#confirmModal"
+              id="buttonS"
             >
               Submit Post
             </button>

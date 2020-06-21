@@ -1,12 +1,16 @@
+$("#buttonS").click(function () {
+  const newProfile = $("#newPostForm").serializeArray(); // missing # for id selector
 
+  const postObject = {};
+  newProfile.map(function (value) {
+    postObject[value.name] = value.value;
+ }); 
+$.post("https://ajaxclass-1ca34.firebaseio.com/medium-equipo1/posts/.json", JSON.stringify(postObject), function (data){console.log (data)})
 
-$("#buttonS").click(function(){        
-    var newProfile=$("#newPostForm").serializeArray(); // missing # for id selector
-    console.log(newProfile); 
-    $("#confirmModal").modal('hide')                   
+  $("#confirmModal").modal("show");
 });
 
-const printCards =()=>{
+/*const printCards =()=>{
     newProfile.forEach(datos=>{  
         ("#cardsPost").append(`<div class="card-mb-3">
         <div class="row no-gutters d-flex">
@@ -158,4 +162,4 @@ const printCards =()=>{
 </div>
 </div>`)
     })
-}
+}*/
