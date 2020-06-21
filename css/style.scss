@@ -1,7 +1,7 @@
 
-*{
+/*{
      box-sizing: border-box;
-}
+}*/
 
 body{
     font-family: 'Open Sans', sans-serif;  
@@ -82,6 +82,7 @@ li img{
 .carrusel{
     
     position: sticky;
+    border-bottom: .5px solid rgba(196, 183, 183, 0.589);
     
 }
 
@@ -100,7 +101,7 @@ li img{
 
 .lix{
         overflow-x: hidden;
-        width: 800px;
+        width: 1015px;
     }
 
 .aside{
@@ -134,21 +135,22 @@ li img{
 
   
 .sizetext{
-    font-size: 13px;
-    color: black;
+    font-size: 20px;
+    color: rgb(104, 102, 102);
 }
+
 
 .marge{
     margin-left: 68px;
 }
 
 .arrows{
-    margin-top: 8px;
+    margin-top: 13px;
     
 }
 
 .arrow{
-    margin-top: 8px;
+    margin-top: 13px;
     
 }
 

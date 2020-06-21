@@ -1,33 +1,33 @@
 // navbar animada 
-$("#horizon-prev").click(function(){
+$("#horizon-prev").click(function () {
     event.preventDefault();
     $(".lix").animate({
-        scrollLeft: "-=100"
-      }, "slow");
-    });
-
-
-$("#horizon-next").click(function() {
-    event.preventDefault();
-    $(".lix").animate({
-     scrollLeft: "+=100"
+        scrollLeft: "-=800"
     }, "slow");
-  });
+});
 
- window.addEventListener("scroll", (event)=>{     
-    if( $(window).scrollTop() > $(document).height() - $(window).height() -100 ) {
+
+$("#horizon-next").click(function () {
+    event.preventDefault();
+    $(".lix").animate({
+        scrollLeft: "+=800"
+    }, "slow");
+});
+
+window.addEventListener("scroll", (event) => {
+    if ($(window).scrollTop() > $(document).height() - $(window).height() - 100) {
         loadMorePost()
-        
+
     }
 })
 
-const loadMorePost =()=>{
+const loadMorePost = () => {
     //$("#containeer").append()
     console.log("lo que quieras")
     $.ajax({
-        url: "js/posts.json",        
-        success: function(data){
-            data.map(post=>{
+        url: "js/posts.json",
+        success: function (data) {
+            data.map(post => {
                 $("#containeer").append(` <div id="second-card" class="card mb-3">
                 <div class="row no-gutters d-flex align-items-center  flex-row-reverse">
                     <div class="col-4">
@@ -63,6 +63,6 @@ const loadMorePost =()=>{
         },
         dataType: "json",
         cache: false
-      });
-    }
+    });
+}
 
