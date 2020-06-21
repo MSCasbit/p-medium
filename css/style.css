@@ -26,6 +26,14 @@ body {
   height: 32px;
 }
 
+#upbtn {
+  border: 1px solid #7a7a7a;
+}
+
+#upbtn:hover {
+  border: 1px solid black;
+}
+
 .photo {
   width: 35px;
 }
