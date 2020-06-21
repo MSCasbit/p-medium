@@ -10,8 +10,56 @@ $.post("https://ajaxclass-1ca34.firebaseio.com/medium-equipo1/posts/.json", JSON
   $("#confirmModal").modal("show");
 });
 
+
+
+
+     /* var listaPost = $("#cardsPost");
+      $.each(respuesta.data, function(index, elemento) {
+        listaUsuarios.append(`<div class="card-mb-3">
+        <div class="row no-gutters d-flex">
+            <div class="col-mb-4">
+                <img class="imageess"
+                    src="${respuesta.imageurl}"
+                    alt="atardecer">
+            </div>
+            <div class="col-8 ml-4">
+                <div class="textos">
+                    <p class="card-title font-weight-bold">${respuesta.title}</p>
+                    <p class="text-card">${respuesta.description}
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-9 p-0">
+                        <a class="text-dark user ml-3" href="https://medium.com/">${respuesta.author}</a>
+                        <span class="text-dark user"> in </span>
+                        <a class="text-dark user" href="https://medium.com/">${respuesta.category}</a>
+                        <br><time class=" text-muted user ml-3">${respuesta.date}
+                            </time><span class="text-muted small"> <img width="6px"
+                                src="images/primitive-dot (2).svg" alt="doot"> 3 min read
+                            read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
+                    </div>
+                    <div class="col-3 p-0 d-flex justify-content-end">
+                        <img class="d-md-none" width="23px" src="images/guardar1.svg" alt="guardar">
+
+                        <img class="mr-2 menu" width="23px" src="images/more_horiz-24px (1).svg" alt="dotts">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>` 
+        );    
+      });
+    },
+    error: function() {
+      console.log("No se ha podido obtener la información");
+    }
+  });
+}
+
 /*const printCards =()=>{
-    newProfile.forEach(datos=>{  
+    respuesta.forEach(datos=>{  
         ("#cardsPost").append(`<div class="card-mb-3">
         <div class="row no-gutters d-flex">
             <div class="col-mb-4">
