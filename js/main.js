@@ -60,6 +60,9 @@ const loadMorePost = () => {
                       </div>
                       <div class="modal-body">
                         ${post.description}
+                        <img width="100%"
+                            src="${post.imageurl}"
+                            class="card-img mb-3" alt="">
                         <hr>
                         ${post.content}
                         <hr>
