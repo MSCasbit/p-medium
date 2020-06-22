@@ -66,21 +66,52 @@ const loadMorePost =()=>{
     } 
 
 
-$(window).on("load", getPost);
+
 let currentDate = new Date()
-function getPost () {
-  $.ajax({
-    url: 'https://ajaxclass-1ca34.firebaseio.com/medium-equipo1/posts/.json',
-    success: function(respuesta) {
 
+let rightCounter = 0
+let centerCounter= 0
+let leftCounter = 0
+
+const getPost = () => {
+  $.get(
+    "https://ajaxclass-1ca34.firebaseio.com/medium-equipo1/posts/.json",
+    function(respuesta) {
+        const dataArray = [];
         for(let key in respuesta){
-            let postRecent = respuesta[key]           
+            const postRecent ={
+                id: key,
+                ...respuesta[key],
+            }
+            dataArray.push(postRecent)  
+        }   
+        console.log(dataArray)
+        const sortedArticle = dataArray.sort(function (a,b){
+            const aDate = a.date 
+            const bDate = b.date 
+        
+            if(aDate>bDate){
+                return -1
+            }else{
+                return 1
+            }
+        })
+        const postRecent=sortedArticle.slice(0,5)
+        const generalPosts= sortedArticle.slice(5)
 
-            
-            if(postRecent.category === "Coronavirus"){                
-                printLeftCardRecent(postRecent)
-            }else if(postRecent.category ==="OneZero"){
+        console.log(postRecent)
+    })
+}
+
+$(window).on("load", getPost);
+
+
+       /* if(postRecent.category === "Coronavirus"||leftCounter<1){                
+                printLeftCardRecent(postRecent) 
+                leftCounter++ 
+            }else if(postRecent.category ==="OneZero"||rightCounter<1){
                 printRightCards(postRecent)
+                rightCounter++
             }
             else{
                 printCenterCards(postRecent)
@@ -182,3 +213,4 @@ const printRightCards =(post)=>{
     </div>
 </div>`)
 }
+*/
