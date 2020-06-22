@@ -144,8 +144,16 @@ li img {
   font-size: 20px;
 }
 
+.card-title:hover {
+  cursor: pointer;
+}
+
 .card-title2 {
   font-size: 14px;
+}
+
+.card-title2:hover {
+  cursor: pointer;
 }
 
 .text-card {

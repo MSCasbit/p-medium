@@ -118,9 +118,15 @@ li img{
 }
   .card-title{
     font-size: 20px;
+    &:hover{
+        cursor: pointer;
+    }
 }
   .card-title2{
       font-size: 14px;
+      &:hover{
+          cursor: pointer;
+      }
 }
   .text-card{
     font-size: 14px;
