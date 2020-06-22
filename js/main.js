@@ -59,7 +59,7 @@ const loadMorePost = () => {
                                     <a class="text-dark user"data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}" href="#">${post.author}</a>
                                     <span class="text-dark user">in</span>
                                     <a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
-                                    <br><time class=" text-muted user" >${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="bottom" title="${randomNumber} min read"> <img width="6px"
+                                    <br><time class=" text-muted user"data-toggle="tooltip" data-placement="top" title="${post.date} min read" >${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="bottom" title="${randomNumber} min read"> <img width="6px"
                                             src="images/primitive-dot (2).svg" alt=""> ${randomNumber} min
                                         read </span><span> <img width="8px" src="images/star (3).svg" alt="">
                                     </span>
@@ -201,7 +201,7 @@ const getPost = () => {
                                 <a class="text-dark user ml-3" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}">${post.author}</a>
                                 <span class="text-dark user">in </span>
                                 <a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
-                                <br><time class=" text-muted user ml-3" data-toggle="tooltip" data-placement="top" title= "Updated ${post.date}">${post.date}</time><span class="text-muted small"data-toggle="tooltip" data-placement="top" title= " ${randomNumber} min read"> <img width="6px"
+                                <br><time class=" text-muted user ml-3" data-toggle="tooltip" data-placement="top" title= "Updated ${post.date}">${post.date}</time><span class="text-muted small"data-toggle="tooltip" data-placement="bottom" title= " ${randomNumber} min read"> <img width="6px"
                                         src="images/primitive-dot (2).svg" alt="doot"> ${randomNumber} min
                                     read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
                             </div>
@@ -233,7 +233,7 @@ const getPost = () => {
                             in </span>
                         <a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
                         <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title= "Updated ${post.date}">${post.date}</time><span
-                            class="text-muted small"data-toggle="tooltip" data-placement="top" title= " ${randomNumber} min read"> <img width="6px" src="images/primitive-dot (2).svg"
+                            class="text-muted small"data-toggle="tooltip" data-placement="bottom" title= " ${randomNumber} min read"> <img width="6px" src="images/primitive-dot (2).svg"
                                 alt="doot"> ${randomNumber} min
                             read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
                         <div class="btn-group">
@@ -261,7 +261,7 @@ const getPost = () => {
                                     <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}" >${post.author}</a>
                                     <span class="text-dark user">in</span>
                                     <a class="text-dark user" href="https://medium.com/" data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
-                                    <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title="Updated ${post.date}">${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="top" title= " ${randomNumber} min read"> <img width="6px"
+                                    <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title="Updated ${post.date}">${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="bottom" title= " ${randomNumber} min read"> <img width="6px"
                                             src="images/primitive-dot (2).svg" alt="" > ${randomNumber} min
                                         read </span><span> <img width="8px" src="images/star (3).svg" alt="">
                                     </span>
