@@ -68,10 +68,7 @@ const loadMorePost =()=>{
 
 
 let currentDate = new Date()
-
-let rightCounter = 0
-let centerCounter= 0
-let leftCounter = 0
+let counter = 0
 
 const getPost = () => {
   $.get(
@@ -99,7 +96,100 @@ const getPost = () => {
         const postRecent=sortedArticle.slice(0,5)
         const generalPosts= sortedArticle.slice(5)
 
-        console.log(postRecent)
+        sortedArticle.map(post=>{
+            if (counter<1){
+                $("#cardLeftPost").append (`<div class="card-mb-3">
+                <div class="row no-gutters d-flex">
+                    <div class="col-mb-4">
+                        <img class="imageess"
+                            src="${post.imageurl}"
+                            alt="atardecer">
+                    </div>
+                    <div class="col-8 ml-4">
+                        <div class="textos">
+                            <p class="card-title font-weight-bold">${post.title}</p>
+                            <p class="text-card">${post.description}
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-9 p-0">
+                                <a class="text-dark user ml-3" href="https://medium.com/">${post.author}</a>
+                                <span class="text-dark user">in </span>
+                                <a class="text-dark user" href="https://medium.com/">${post.category}</a>
+                                <br><time class=" text-muted user ml-3">${post.date}</time><span class="text-muted small"> <img width="6px"
+                                        src="images/primitive-dot (2).svg" alt="doot"> 3 min
+                                    read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
+                            </div>
+                            <div class="col-3 p-0 d-flex justify-content-end">
+                                <img class="d-md-none" width="23px" src="images/guardar1.svg" alt="guardar">
+            
+                                <img class="mr-2 menu" width="23px" src="images/more_horiz-24px (1).svg" alt="dotts">
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>`)
+            } else if (counter>3){
+                $("#rightCard").append(`<div class="card-mb-3">
+                <div class="row no-gutters">
+                    <div class="col-mb-4">
+                        <img class="imageess"
+                            src="${post.imageurl}"
+                            alt="atardecer 2">
+                    </div>
+                    <div class="col-md-8 ml-4">
+                        <div class="textos">
+                            <p class="card-title font-weight-bold">${post.title}</p>
+                            <p class="text-card">${post.description}</p>
+                        </div>
+                        <a class="text-dark user" href="https://medium.com/">${post.author}</a><span
+                            class="text-dark small">
+                            in </span>
+                        <a class="text-dark user" href="https://medium.com/">${post.category}</a>
+                        <br><time class=" text-muted user">${post.date}</time><span
+                            class="text-muted small"> <img width="6px" src="images/primitive-dot (2).svg"
+                                alt="doot"> 3 min
+                            read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
+                        <div class="btn-group">
+                            <img class="d-md-none" width="23px" src="images/guardar1.svg" alt="guardar">
+                            <img width="23px" src="images/more_horiz-24px (1).svg" alt="dotts">
+                        </div>
+                    </div>
+                </div>
+            </div>`)
+                
+            } else if (counter >= 1 && counter <= 3){
+                $("#cardsCenter").append (`<div id="second-card" class="card mb-3">
+                <div class="row no-gutters d-flex align-items-center  flex-row-reverse flex-md-row">
+                    <div class="col-4">
+                        <img width="100%"
+                            src="${post.imageurl}"
+                            class="card-img mb-3" alt="">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body pr-0 pt-0">
+                            <h5 class="card-title font-weight-bold">${post.title}</h5>
+                            <div class="btn-group2 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <a class="text-dark user" href="https://medium.com/">${post.author}</a>
+                                    <span class="text-dark user">in</span>
+                                    <a class="text-dark user" href="https://medium.com/">${post.category}</a>
+                                    <br><time class=" text-muted user">${post.date}</time><span class="text-muted user"> <img width="6px"
+                                            src="images/primitive-dot (2).svg" alt=""> 3 min
+                                        read </span><span> <img width="8px" src="images/star (3).svg" alt="">
+                                    </span>
+                                </div>
+                                <div>
+                                    <img class="d-md-none" width="23px" src="images/guardar1.svg" alt="guardar">
+                                    <img class="dotts m-0" src="images/more_horiz-24px (1).svg" alt="dotts">
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+            `)
+            } else {console.log ("aqui va a ir en medio")}
+            counter ++
+        })
     })
 }
 
