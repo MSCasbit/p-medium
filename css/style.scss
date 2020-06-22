@@ -3,24 +3,20 @@
      box-sizing: border-box;
      
 }
-
 body{
     font-family: 'Open Sans', sans-serif;  
 
 }
 .svgIcon-use {
     width: 120px;
-  }
-
+}
 .icons{
     width: 24px;
     margin-right: 12px;
 }
-
 .icons:hover{
     cursor: pointer;
 }
-
 .btnbtn{
     font-size: 8px;
     padding: 0px 14px;
@@ -40,26 +36,21 @@ body{
 #upbtn:hover{
     border: 1px solid black;
 }
-
 .photo{
     width: 35px;
 }
-
 li{
     list-style: none;
     display: flex;
     cursor: pointer;
     font-size: 10px;    
 }
-
 li:hover{
     color: black;
 }
-
 li img{
     margin: auto;    
 }
-
 .btn-group img{
     cursor: pointer;
     background-color: #ffffff;
@@ -67,7 +58,6 @@ li img{
     right: -79px;
     top: -16px;
 }
-
 #btn1{
     height: 25px;
     margin-right: 16px;
@@ -78,36 +68,25 @@ li img{
     font-size: 12px;
 
 }
-
-/*.svgIcon-use{
-    width: 120px;
-}*/
-
-
 .carrusel{
     
     position: sticky;
     border-bottom: .5px solid rgba(236, 229, 229, 0.589);
 }
-
 .header1{
    
     padding:10px;
 }
-
 #second-card{
     border: none;
 }
-
 .user{
         font-size: 13px;    
 }
-
 .lix{
         overflow-x: hidden;
         width: 3000px;
-    }
-
+}
 .aside{
     position:sticky;
     top: 0;
@@ -115,7 +94,6 @@ li img{
 #menu{
     font-size: 13px;
 }
-
 .imageess {
     position: relative;
     height: 150px;
@@ -125,7 +103,7 @@ li img{
     margin-top: 0;
     -o-object-fit: fill;
     object-fit: fill;
-  }
+}
   .imageess2{
     position: relative;
     width: 90%;
@@ -134,81 +112,64 @@ li img{
     margin-top: 0;
     -o-object-fit: fill;
     object-fit: fill;
-  }
+}
   .card-img{
       object-fit: fill;
-  }
-
+}
   .card-title{
     font-size: 20px;
-  }
+}
   .card-title2{
       font-size: 14px;
-  }
-
+}
   .text-card{
     font-size: 14px;
     color: gray;
-  }
-
+}
   .btn-group{
     position: relative;
     padding-right: 50px;
-  }
-
-  
+}  
 .sizetext{
     font-size: 13px;
     color: rgb(104, 102, 102);
 }
-
-
 .marge{
     margin-left: 68px;
 }
-
 .arrows{
     margin-top: 8px;
     
 }
-
 .arrow{
     margin-top: 8px;
     
 }
-
 .textA{
     font-size: 13px;
     font-weight: bold;
 }
-
 .dotts{
     width: 20px;
     margin-left: 35px;
 }
-
 .asaide{
     position: -webkit-sticky;
     position: sticky;
     top:50px
 }
-
 .spam{
     background-color: rgb(247, 245, 247);
 }
-
 .about{
     font-size: 14px;
 }
-
 .menu:hover{
    cursor: pointer;
 }
-
 .dotts:hover{
  cursor: pointer;
 }
-
 /*Formulario*/
 .newPost{
     background-color: rgb(234, 243, 243);

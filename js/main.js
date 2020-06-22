@@ -53,7 +53,7 @@ const loadMorePost = () => {
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">${post.title}</h5>
+                        <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">${post.title}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -62,6 +62,9 @@ const loadMorePost = () => {
                         ${post.description}
                         <hr>
                         ${post.content}
+                        <hr>
+                          ${post.category}
+                          ${post.date}
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -132,22 +135,7 @@ const loadMorePost = () => {
                     </ul>
                     </div>`
                 }
-            });
-            $('[data-toggle="popover3"]').popover({
-                container: "body",
-                trigger: "hover",
-                html: true,
-                content: function () {
-                    const description = $(this).data("description")
-                    console.log(description)
-                    return `<div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">${description}</h5>
-                  
-                </div>
-              </div>`
-                }
-            });
+            });           
             $('[data-toggle="popover2"]').popover({
                 container: "body",
                 trigger: "hover",
@@ -208,7 +196,7 @@ const getPost = () => {
                 if (counter < 1) {
                     //card principal izquierda
                     $("#cardLeftPost").append(`<div class="card-mb-3">
-                <div class="row no-gutters d-flex">
+                <div class="row no-gutters d-flex">                
                     <div class="col-mb-4">
                         <img class="imageess"
                             src="${post.imageurl}"
@@ -216,7 +204,7 @@ const getPost = () => {
                     </div>
                     <div class="col-8 ml-4">
                         <div class="textos">
-                            <p class="card-title font-weight-bold">${post.title}</p>
+                            <p class="card-title font-weight-bold"data-toggle="modal" data-target="#exampleModalLong-${post.id}">${post.title}</p>
                             <p class="text-card"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.description}
                             </p>
                         </div>
@@ -237,7 +225,33 @@ const getPost = () => {
                         </div>
             
                     </div>
-                </div>`)
+                </div>
+                <div class="modal fade" id="exampleModalLong-${post.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title font-weight-bold" id="exampleModalLongTitle">${post.title}</h2>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>${post.description}<p>
+                          <img class="imageess"
+                            src="${post.imageurl}"
+                            alt="atardecer 2">
+                          <hr>
+                          ${post.content}
+                          ${post.author}
+                          <hr>
+                          ${post.category}
+                          ${post.date}
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>`)
                 } else if (counter === 4) {
                     //card principal derecha 
                     $("#rightCard").append(`<div class="card-mb-3">
@@ -249,7 +263,7 @@ const getPost = () => {
                     </div>
                     <div class="col-md-8 ml-4">
                         <div class="textos">
-                            <p class="card-title font-weight-bold">${post.title}</p>
+                            <p class="card-title font-weight-bold"data-toggle="modal" data-target="#exampleModalLong-${post.id}">${post.title}</p>
                             <p class="text-card"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.description}</p>
                         </div>
                         <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}">${post.author}</a><span
@@ -266,6 +280,31 @@ const getPost = () => {
                         </div>
                     </div>
                 </div>
+            </div> <div class="modal fade" id="exampleModalLong-${post.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title font-weight-bold" id="exampleModalLongTitle">${post.title}</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>${post.description}<p>
+                  <img class="imageess2"
+                            src="${post.imageurl}"
+                            alt="atardecer 2">
+                  <hr>
+                  ${post.content}
+                  ${post.author}
+                  <hr>
+                  ${post.category}
+                  ${post.date}
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>`)
 
                 } else if (counter >= 1 && counter <= 3) {
@@ -279,7 +318,7 @@ const getPost = () => {
                     </div>
                     <div class="col-8">
                         <div class="card-body pr-0 pt-0">
-                            <h5 class="card-title2 font-weight-bold"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.title}</h5>
+                            <h5 class="card-title2 font-weight-bold" data-toggle="modal" data-target="#exampleModalLong-${post.id}">${post.title}</h5>
                             <div class="btn-group2 d-flex align-items-center justify-content-between">
                                 <div>
                                     <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}" >${post.author}</a>
@@ -296,7 +335,33 @@ const getPost = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>       
+                    </div>
+                    </div> <div class="modal fade" id="exampleModalLong-${post.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title font-weight-bold" id="exampleModalLongTitle">${post.title}</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>${post.description}<p>
+                  <img width="100%"
+                            src="${post.imageurl}"
+                            class="card-img mb-3" alt="">
+                  <hr>
+                  ${post.content}
+                  ${post.author}
+                  <hr>
+                  ${post.category}
+                  ${post.date}
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>     
             `)
                 }
             //se agrega condicional para los mas populares con un nuevo contador interno.
@@ -306,7 +371,7 @@ const getPost = () => {
                     <h2 class="text-muted text-right">0${popularCounter + 1}</h2>
                 </div>
                 <div class="col-9 col-md-8">
-                    <h6 class="textA"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.title}</h6>
+                    <h6 class="textA" data-toggle="modal" data-target="#exampleModalLong-${post.id}">${post.title}</h6>
                     <div>
                     <span><a class="text-dark user" href="#"data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}">${post.author}</a>
                     </span> In <span><a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a></span>
@@ -316,7 +381,32 @@ const getPost = () => {
                                     </span>
                     </div>
                 </div>
-            </li>`)
+            </li>
+            <div class="modal fade" id="exampleModalLong-${post.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">${post.title}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ${post.description}
+                        <img width="100%"
+                            src="${post.imageurl}"
+                            class="card-img mb-3" alt="">
+                        <hr>
+                        ${post.content}
+                        <hr>
+                          ${post.category}
+                          ${post.date}
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>`)
                     popularCounter++
                 }
                 counter++
@@ -341,21 +431,7 @@ const getPost = () => {
               </div>`
                 }
             });
-            $('[data-toggle="popover3"]').popover({
-                container: "body",
-                trigger: "hover",
-                html: true,
-                content: function () {
-                    const description = $(this).data("description")
-                    console.log(description)
-                    return `<div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">${description}</h5>
-                  
-                </div>
-              </div>`
-                }
-            });
+           
             $('[data-toggle="popoverdott"]').popover({
                 container: "body",
                 trigger: "click",
