@@ -178,9 +178,9 @@ const getPost = () => {
                             <h5 class="card-title font-weight-bold">${post.title}</h5>
                             <div class="btn-group2 d-flex align-items-center justify-content-between">
                                 <div>
-                                    <a class="text-dark user" href="https://medium.com/">${post.author}</a>
+                                    <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" >${post.author}</a>
                                     <span class="text-dark user">in</span>
-                                    <a class="text-dark user" href="https://medium.com/">${post.category}</a>
+                                    <a class="text-dark user" href="https://medium.com/" data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
                                     <br><time class=" text-muted user">${post.date}</time><span class="text-muted user"> <img width="6px"
                                             src="images/primitive-dot (2).svg" alt=""> 3 min
                                         read </span><span> <img width="8px" src="images/star (3).svg" alt="">
@@ -211,6 +211,38 @@ const getPost = () => {
             }
             counter ++
         })
+
+        $('[data-toggle="popover"]').popover({
+            container: "body",
+            trigger: "hover",
+            html: true,
+            content: function (){
+                const author= $(this).data("author")
+                console.log (author)
+                return `<div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">${author}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>`
+            }
+        });  
+
+        $('[data-toggle="popover2"]').popover({
+            container: "body",
+            trigger: "hover",
+            html: true,
+            content: function (){
+                const category= $(this).data("category")
+                console.log (category)
+                return `<div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">${category}</h5>
+                </div>
+              </div>`
+            }
+        });  
     })
 }
 $(window).on("load", getPost);

@@ -31,7 +31,7 @@ const loadPosts = () => {
       const recentPost= sortedPosts.slice(0,5)
       const generalPosts= sortedPosts.slice(5)
 
-      recentPost.map(post=>{ 
+      sortedPosts.map(post=>{ 
           let rowClass = "table-primary"
           if (counter<1){
               rowClass= "table-danger"
