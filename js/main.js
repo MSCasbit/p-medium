@@ -16,15 +16,14 @@ $("#horizon-next").click(function () {
         scrollLeft: "+=800"
     }, "slow");
 });
-
+//this is de infinity content
 window.addEventListener("scroll", (event) => {
     if ($(window).scrollTop() > $(document).height() - $(window).height() - 400) {
         loadMorePost()
 
     }
 })
-const loadMorePost = () => {
-    //$("#containeer").append()
+const loadMorePost = () => {    
     console.log("lo que quieras")
     $.get({
         url: "https://ajaxclass-1ca34.firebaseio.com/medium-equipo1/posts/.json",
@@ -37,7 +36,7 @@ const loadMorePost = () => {
                 }
                 dataArray.push(postRecent)
             }
-
+           
             dataArray.map(post => {
                 $("#containeer").append(` <div id="second-card" class="card mb-3">                
                 <div class="row no-gutters d-flex align-items-center  flex-row-reverse">                
@@ -69,6 +68,7 @@ const loadMorePost = () => {
                 </div>
             </div>`)
             })
+            // se agregan tooltips y popover para el scope de la funcion.
             $('[data-toggle="tooltip"]').tooltip()
             $('[data-toggle="popover"]').popover({
                 container: "body",
@@ -138,8 +138,8 @@ const loadMorePost = () => {
     });
 }
 
-
-
+//finish infinity content
+// recent cards
 let currentDate = new Date()
 let counter = 0
 let popularCounter = 0
@@ -148,6 +148,7 @@ const getPost = () => {
     $.get(
         "https://ajaxclass-1ca34.firebaseio.com/medium-equipo1/posts/.json",
         function (respuesta) {
+            //devolvemos un objeto a un array para usar metodos de array 
             const dataArray = [];
             for (let key in respuesta) {
                 const postRecent = {
@@ -168,9 +169,10 @@ const getPost = () => {
                 }
             })
 
-
+         //iteramos dentro del data array e imprimimos cards.
             sortedArticle.map(post => {
                 if (counter < 1) {
+                    //card principal izquierda
                     $("#cardLeftPost").append(`<div class="card-mb-3">
                 <div class="row no-gutters d-flex">
                     <div class="col-mb-4">
@@ -203,6 +205,7 @@ const getPost = () => {
                     </div>
                 </div>`)
                 } else if (counter === 4) {
+                    //card principal derecha 
                     $("#rightCard").append(`<div class="card-mb-3">
                 <div class="row no-gutters">
                     <div class="col-mb-4">
@@ -232,6 +235,7 @@ const getPost = () => {
             </div>`)
 
                 } else if (counter >= 1 && counter <= 3) {
+                    //cards principal centro 
                     $("#cardsCenter").append(`<div id="second-card" class="card mb-3">
                 <div class="row no-gutters d-flex align-items-center  flex-row-reverse flex-md-row">
                     <div class="col-4">
@@ -261,15 +265,21 @@ const getPost = () => {
                     </div>       
             `)
                 }
-
+            //se agrega condicional para los mas populares con un nuevo contador interno.
                 if (popularCounter < 4 && post.category === "Coronavirus") {
                     $("#popularPost").append(`<li class="mb-5">
                 <div class="col-3 col-md-4 p-0">
                     <h2 class="text-muted text-right">0${popularCounter + 1}</h2>
                 </div>
                 <div class="col-9 col-md-8">
-                    <h6 class="textA">${post.title}</h6>
-                    <div>${post.author} In ${post.category}
+                    <h6 class="textA"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.title}</h6>
+                    <div>
+                    <span><a class="text-dark user" href="#"data-toggle="popover" data-placement="top" data-author="${post.author}">${post.author}</a>
+                    </span> In <span><a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a></span>
+                    <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title="Updated ${post.date}">${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="bottom" title="3 min read"> <img width="6px"
+                                            src="images/primitive-dot (2).svg" alt=""> 3 min
+                                        read </span><span> <img width="8px" src="images/star (3).svg" alt="">
+                                    </span>
                     </div>
                 </div>
             </li>`)
@@ -277,6 +287,7 @@ const getPost = () => {
                 }
                 counter++
             })
+            //se agregan tooltips y popover dentro del scope para el alcance detntro de la funcion.
             $('[data-toggle="tooltip"]').tooltip()
             $('[data-toggle="popover"]').popover({
                 container: "body",
