@@ -120,10 +120,10 @@ const getPost = () => {
                         </div>
                         <div class="row">
                             <div class="col-9 p-0">
-                                <a class="text-dark user ml-3" href="https://medium.com/">${post.author}</a>
+                                <a class="text-dark user ml-3" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}">${post.author}</a>
                                 <span class="text-dark user">in </span>
-                                <a class="text-dark user" href="https://medium.com/">${post.category}</a>
-                                <br><time class=" text-muted user ml-3">${post.date}</time><span class="text-muted small"> <img width="6px"
+                                <a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
+                                <br><time class=" text-muted user ml-3" data-toggle="tooltip" data-placement="top" title= "Updated ${post.date}">${post.date}</time><span class="text-muted small"> <img width="6px"
                                         src="images/primitive-dot (2).svg" alt="doot"> 3 min
                                     read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
                             </div>
@@ -149,11 +149,11 @@ const getPost = () => {
                             <p class="card-title font-weight-bold">${post.title}</p>
                             <p class="text-card">${post.description}</p>
                         </div>
-                        <a class="text-dark user" href="https://medium.com/">${post.author}</a><span
+                        <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}">${post.author}</a><span
                             class="text-dark small">
                             in </span>
-                        <a class="text-dark user" href="https://medium.com/">${post.category}</a>
-                        <br><time class=" text-muted user">${post.date}</time><span
+                        <a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
+                        <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title= "Updated ${post.date}">${post.date}</time><span
                             class="text-muted small"> <img width="6px" src="images/primitive-dot (2).svg"
                                 alt="doot"> 3 min
                             read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
@@ -181,8 +181,8 @@ const getPost = () => {
                                     <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" >${post.author}</a>
                                     <span class="text-dark user">in</span>
                                     <a class="text-dark user" href="https://medium.com/" data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
-                                    <br><time class=" text-muted user">${post.date}</time><span class="text-muted user"> <img width="6px"
-                                            src="images/primitive-dot (2).svg" alt=""> 3 min
+                                    <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title="Updated ${post.date}">${post.date}</time><span class="text-muted user"> <img width="6px"
+                                            src="images/primitive-dot (2).svg" alt="" > 3 min
                                         read </span><span> <img width="8px" src="images/star (3).svg" alt="">
                                     </span>
                                 </div>
@@ -211,7 +211,7 @@ const getPost = () => {
             }
             counter ++
         })
-
+        $('[data-toggle="tooltip"]').tooltip()
         $('[data-toggle="popover"]').popover({
             container: "body",
             trigger: "hover",
@@ -222,8 +222,8 @@ const getPost = () => {
                 return `<div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">${author}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h6 class="card-subtitle mb-2 text-muted">Medium member since 2000</h6>
+                  <p class="card-text">Developer, accidental wordsmith. OneZero columnist trying to debug the why behind tech.</p>
                 </div>
               </div>`
             }
@@ -239,6 +239,7 @@ const getPost = () => {
                 return `<div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">${category}</h5>
+                  <p>Higher Learning. A new Medium publication.</p>
                 </div>
               </div>`
             }
