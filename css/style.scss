@@ -83,8 +83,7 @@ li img{
 .carrusel{
     
     position: sticky;
-    border-bottom: .5px solid rgba(196, 183, 183, 0.589);
-    
+    border-bottom: .5px solid rgba(236, 229, 229, 0.589);
 }
 
 .header1{
@@ -109,6 +108,9 @@ li img{
     position:sticky;
     top: 0;
 }
+#menu{
+    font-size: 13px;
+}
 
 .imageess {
     position: relative;
@@ -131,7 +133,10 @@ li img{
   }
 
   .card-title{
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .card-title2{
+      font-size: 14px;
   }
 
   .text-card{
