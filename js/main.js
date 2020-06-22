@@ -12,6 +12,10 @@ $("#horizon-prev").click(function () {
     }, "slow");
 });
 
+$(".card-title").click(event=>{
+    $("#exampleModalLong").modal('show')
+})
+
 
 $("#horizon-next").click(function () {
     event.preventDefault();
@@ -44,7 +48,27 @@ const loadMorePost = () => {
                 let randomAge = getRandomInt(2000,2020)
                 let randomNumber = getRandomInt(3,10)
                 
-                $("#containeer").append(` <div id="second-card" class="card mb-3">                
+                $("#containeer").append(`
+                <div class="modal fade" id="exampleModalLong-${post.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">${post.title}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ${post.description}
+                        <hr>
+                        ${post.content}
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div> <div id="second-card" class="card mb-3">                
                 <div class="row no-gutters d-flex align-items-center  flex-row-reverse">                
                     <div class="col-4">
                         <img src="${post.imageurl}"
@@ -52,7 +76,7 @@ const loadMorePost = () => {
                     </div>
                     <div class="col-8">
                         <div class="card-body pr-0 pt-0">
-                            <h5 class="card-title font-weight-bold">${post.title}</h5>
+                            <h5 class="card-title font-weight-bold" data-toggle="modal" data-target="#exampleModalLong-${post.id}">${post.title}</h5>
                             <div class="btn-group2 d-flex align-items-center justify-content-between">
                                 <div>
                                     <p class="text muted"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.description} </p>
