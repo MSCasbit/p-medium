@@ -97,7 +97,7 @@ li img{
 }
 
 .user{
-        font-size: 9px;    
+        font-size: 13px;    
 }
 
 .lix{
@@ -112,12 +112,22 @@ li img{
 
 .imageess {
     position: relative;
+    height: 150px;
+    margin: 12px;
     width: 100%;
+    right: 20px;
+    margin-top: 0;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+  .imageess2{
+    position: relative;
+    width: 90%;
     height: 150px;
     margin: 12px;
     margin-top: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: fill;
+    object-fit: fill;
   }
 
   .card-title{
@@ -136,7 +146,7 @@ li img{
 
   
 .sizetext{
-    font-size: 14px;
+    font-size: 13px;
     color: rgb(104, 102, 102);
 }
 

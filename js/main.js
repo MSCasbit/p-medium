@@ -140,7 +140,7 @@ const getPost = () => {
                 $("#rightCard").append(`<div class="card-mb-3">
                 <div class="row no-gutters">
                     <div class="col-mb-4">
-                        <img class="imageess"
+                        <img class="imageess2"
                             src="${post.imageurl}"
                             alt="atardecer 2">
                     </div>
@@ -222,9 +222,14 @@ const getPost = () => {
                 return `<div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">${author}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <p class="card-text">Front-end enfocado en hacer llorar a sus koders, desayuna nopales con cebolla , se dice es su alimento favorito</p>
+                   <hr>
+                   <div class="d-flex justify-content-bewteen">
+                   <p class="text-muted">Followers by 298 people</p>
+                   <button type="button"class="btn btn-succes">Follow</button>
+                   </div>
+                  </div>
               </div>`
             }
         });  
@@ -246,38 +251,4 @@ const getPost = () => {
     })
 }
 $(window).on("load", getPost);
-
-/*const popularPost =()=>{
-    $.get({
-        url: "https://ajaxclass-1ca34.firebaseio.com/medium-equipo1/posts/.json",        
-        success: function(data){
-            const dataArray = [];
-        for(let key in data){
-            const postRecent ={
-                id: key,
-                ...data[key],
-            }
-            dataArray.push(postRecent)  
-        } 
-        dataArray.map(post=>{
-            if (post.category==="Coronavirus"){
-                $("#popularPost").append(`<li class="mb-5">
-                <div class="col-3 col-md-4 p-0">
-                    <h2 class="text-muted text-right">01</h2>
-                </div>
-                <div class="col-9 col-md-8">
-                    <h6 class="textA">My Jorney Toward Radical Body Positivity</h6>
-                    <div>Matt McGorrie In Human Parts
-                    </div>
-                </div>
-            </li>`)
-            }
-        }) 
-        }
-
-    })
-}
-    $(window).on("load", popularPost);*/
-
-   
 
