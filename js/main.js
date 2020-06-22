@@ -1,4 +1,9 @@
 // navbar animada 
+ 
+ 
+ function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }            
 $("#closed").click(function(){
     $(this).closest("#cardPublisher").remove()
 })
@@ -38,6 +43,9 @@ const loadMorePost = () => {
             }
            
             dataArray.map(post => {
+                let randomAge = getRandomInt(2000,2020)
+                let randomNumber = getRandomInt(3,10)
+                
                 $("#containeer").append(` <div id="second-card" class="card mb-3">                
                 <div class="row no-gutters d-flex align-items-center  flex-row-reverse">                
                     <div class="col-4">
@@ -50,11 +58,11 @@ const loadMorePost = () => {
                             <div class="btn-group2 d-flex align-items-center justify-content-between">
                                 <div>
                                     <p class="text muted"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.description} </p>
-                                    <a class="text-dark user"data-toggle="popover" data-placement="top" data-author="${post.author}"href="#">${post.author}</a>
+                                    <a class="text-dark user"data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}" href="#">${post.author}</a>
                                     <span class="text-dark user">in</span>
                                     <a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
-                                    <br><time class=" text-muted user">${post.date}</time><span class="text-muted user"> <img width="6px"
-                                            src="images/primitive-dot (2).svg" alt=""> 3 min
+                                    <br><time class=" text-muted user" >${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="bottom" title="${randomNumber} min read"> <img width="6px"
+                                            src="images/primitive-dot (2).svg" alt=""> ${randomNumber} min
                                         read </span><span> <img width="8px" src="images/star (3).svg" alt="">
                                     </span>
                                 </div>
@@ -76,11 +84,12 @@ const loadMorePost = () => {
                 html: true,
                 content: function () {
                     const author = $(this).data("author")
+                    const age = $(this).data("age")
                     console.log(author)
                     return `<div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title">${author}</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Medium member since 2000</h6>
+                      <h6 class="card-subtitle mb-2 text-muted">Medium member since ${age}</h6>
                       <p class="card-text">Developer, accidental wordsmith. OneZero columnist trying to debug the why behind tech.</p>
                     </div>
                   </div>`
@@ -171,6 +180,9 @@ const getPost = () => {
 
          //iteramos dentro del data array e imprimimos cards.
             sortedArticle.map(post => {
+                let randomNumber = getRandomInt(3,10)
+                let randomAge = getRandomInt(2000,2020)
+               
                 if (counter < 1) {
                     //card principal izquierda
                     $("#cardLeftPost").append(`<div class="card-mb-3">
@@ -188,11 +200,11 @@ const getPost = () => {
                         </div>
                         <div class="row">
                             <div class="col-9 p-0">
-                                <a class="text-dark user ml-3" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}">${post.author}</a>
+                                <a class="text-dark user ml-3" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}">${post.author}</a>
                                 <span class="text-dark user">in </span>
                                 <a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
-                                <br><time class=" text-muted user ml-3" data-toggle="tooltip" data-placement="top" title= "Updated ${post.date}">${post.date}</time><span class="text-muted small"> <img width="6px"
-                                        src="images/primitive-dot (2).svg" alt="doot"> 3 min
+                                <br><time class=" text-muted user ml-3" data-toggle="tooltip" data-placement="top" title= "Updated ${post.date}">${post.date}</time><span class="text-muted small"data-toggle="tooltip" data-placement="top" title= " ${randomNumber} min read"> <img width="6px"
+                                        src="images/primitive-dot (2).svg" alt="doot"> ${randomNumber} min
                                     read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
                             </div>
                             <div class="col-3 p-0 d-flex justify-content-end">
@@ -218,13 +230,13 @@ const getPost = () => {
                             <p class="card-title font-weight-bold">${post.title}</p>
                             <p class="text-card"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.description}</p>
                         </div>
-                        <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}">${post.author}</a><span
+                        <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}">${post.author}</a><span
                             class="text-dark small">
                             in </span>
                         <a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
                         <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title= "Updated ${post.date}">${post.date}</time><span
-                            class="text-muted small"> <img width="6px" src="images/primitive-dot (2).svg"
-                                alt="doot"> 3 min
+                            class="text-muted small"data-toggle="tooltip" data-placement="top" title= " ${randomNumber} min read"> <img width="6px" src="images/primitive-dot (2).svg"
+                                alt="doot"> ${randomNumber} min
                             read </span><span> <img width="8px" src="images/star (3).svg" alt=""> </span>
                         <div class="btn-group">
                             <img class="d-md-none" width="23px" src="images/guardar1.svg" alt="guardar"data-toggle="tooltip" data-placement="bottom" title="Guardar">
@@ -248,11 +260,11 @@ const getPost = () => {
                             <h5 class="card-title2 font-weight-bold"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.title}</h5>
                             <div class="btn-group2 d-flex align-items-center justify-content-between">
                                 <div>
-                                    <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" >${post.author}</a>
+                                    <a class="text-dark user" href="#" data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}" >${post.author}</a>
                                     <span class="text-dark user">in</span>
                                     <a class="text-dark user" href="https://medium.com/" data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a>
-                                    <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title="Updated ${post.date}">${post.date}</time><span class="text-muted user"> <img width="6px"
-                                            src="images/primitive-dot (2).svg" alt="" > 3 min
+                                    <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title="Updated ${post.date}">${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="top" title= " ${randomNumber} min read"> <img width="6px"
+                                            src="images/primitive-dot (2).svg" alt="" > ${randomNumber} min
                                         read </span><span> <img width="8px" src="images/star (3).svg" alt="">
                                     </span>
                                 </div>
@@ -274,10 +286,10 @@ const getPost = () => {
                 <div class="col-9 col-md-8">
                     <h6 class="textA"data-toggle="popover3" data-placement="top" data-description="${post.description} ">${post.title}</h6>
                     <div>
-                    <span><a class="text-dark user" href="#"data-toggle="popover" data-placement="top" data-author="${post.author}">${post.author}</a>
+                    <span><a class="text-dark user" href="#"data-toggle="popover" data-placement="top" data-author="${post.author}" data-age="${randomAge}">${post.author}</a>
                     </span> In <span><a class="text-dark user" href="#"data-toggle="popover2" data-placement="top" data-category="${post.category}">${post.category}</a></span>
-                    <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title="Updated ${post.date}">${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="bottom" title="3 min read"> <img width="6px"
-                                            src="images/primitive-dot (2).svg" alt=""> 3 min
+                    <br><time class=" text-muted user" data-toggle="tooltip" data-placement="top" title="Updated ${post.date}">${post.date}</time><span class="text-muted user"data-toggle="tooltip" data-placement="bottom" title="${randomNumber} min read"> <img width="6px"
+                                            src="images/primitive-dot (2).svg" alt=""> ${randomNumber} min
                                         read </span><span> <img width="8px" src="images/star (3).svg" alt="">
                                     </span>
                     </div>
@@ -287,7 +299,7 @@ const getPost = () => {
                 }
                 counter++
             })
-            //se agregan tooltips y popover dentro del scope para el alcance detntro de la funcion.
+            let randomAge = getRandomInt(2000,2020)//se agregan tooltips y popover dentro del scope para el alcance detntro de la funcion.
             $('[data-toggle="tooltip"]').tooltip()
             $('[data-toggle="popover"]').popover({
                 container: "body",
@@ -295,12 +307,13 @@ const getPost = () => {
                 html: true,
                 content: function () {
                     const author = $(this).data("author")
+                    const age = $(this).data("age")
                     console.log(author)
-                    return `<div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">${author}</h5>
+                    return `<div class="card">
+                <div id="cardPopover" class="card-body">
+                  <h2 class="card-title">${author}</h2>
                   <hr>
-                  <h6 class="card-subtitle mb-2 text-muted">Medium member since 2000</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Medium member since ${age}</h6>
                   <p class="card-text">Developer, accidental wordsmith. OneZero columnist trying to debug the why behind tech.</p>
                 </div>
               </div>`

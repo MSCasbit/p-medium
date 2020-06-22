@@ -22,7 +22,7 @@ body{
 }
 
 .btnbtn{
-    font-size: 12px;
+    font-size: 8px;
     padding: 0px 14px;
     margin-right: 12px;
     background:white;
@@ -32,6 +32,10 @@ body{
 }
 #upbtn{
     border: 1px solid rgb(122, 122, 122);
+    font-size: 12px;
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px
 }
 #upbtn:hover{
     border: 1px solid black;
@@ -131,6 +135,9 @@ li img{
     -o-object-fit: fill;
     object-fit: fill;
   }
+  .card-img{
+      object-fit: fill;
+  }
 
   .card-title{
     font-size: 20px;
@@ -220,7 +227,12 @@ li img{
 
     }
 }
-
+#cardPopover{
+    border: none;
+}
+.card{
+    border: none;
+}
 
 
 

@@ -1,0 +1,239 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.svgIcon-use {
+  width: 120px;
+}
+
+.icons {
+  width: 24px;
+  margin-right: 12px;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
+
+.btnbtn {
+  font-size: 8px;
+  padding: 0px 14px;
+  margin-right: 12px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #646464;
+  height: 32px;
+}
+
+#upbtn {
+  border: 1px solid #7a7a7a;
+  font-size: 12px;
+  padding: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#upbtn:hover {
+  border: 1px solid black;
+}
+
+.photo {
+  width: 35px;
+}
+
+li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+li:hover {
+  color: black;
+}
+
+li img {
+  margin: auto;
+}
+
+.btn-group img {
+  cursor: pointer;
+  background-color: #ffffff;
+  position: relative;
+  right: -79px;
+  top: -16px;
+}
+
+#btn1 {
+  height: 25px;
+  margin-right: 16px;
+  margin-top: 5px;
+  margin-left: 16px;
+  padding: 0px;
+  width: 65px;
+  font-size: 12px;
+}
+
+/*.svgIcon-use{
+    width: 120px;
+}*/
+.carrusel {
+  position: -webkit-sticky;
+  position: sticky;
+  border-bottom: 0.5px solid rgba(236, 229, 229, 0.589);
+}
+
+.header1 {
+  padding: 10px;
+}
+
+#second-card {
+  border: none;
+}
+
+.user {
+  font-size: 13px;
+}
+
+.lix {
+  overflow-x: hidden;
+  width: 3000px;
+}
+
+.aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#menu {
+  font-size: 13px;
+}
+
+.imageess {
+  position: relative;
+  height: 150px;
+  margin: 12px;
+  width: 100%;
+  right: 20px;
+  margin-top: 0;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.imageess2 {
+  position: relative;
+  width: 90%;
+  height: 150px;
+  margin: 12px;
+  margin-top: 0;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.card-img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-title2 {
+  font-size: 14px;
+}
+
+.text-card {
+  font-size: 14px;
+  color: gray;
+}
+
+.btn-group {
+  position: relative;
+  padding-right: 50px;
+}
+
+.sizetext {
+  font-size: 13px;
+  color: #686666;
+}
+
+.marge {
+  margin-left: 68px;
+}
+
+.arrows {
+  margin-top: 8px;
+}
+
+.arrow {
+  margin-top: 8px;
+}
+
+.textA {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dotts {
+  width: 20px;
+  margin-left: 35px;
+}
+
+.asaide {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+
+.spam {
+  background-color: #f7f5f7;
+}
+
+.about {
+  font-size: 14px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.dotts:hover {
+  cursor: pointer;
+}
+
+/*Formulario*/
+.newPost {
+  background-color: #eaf3f3;
+}
+
+.newPost .form-control {
+  background-color: #e2e2e2;
+  font-size: 13px;
+}
+
+.newPost label {
+  font-weight: bold;
+}
+
+.newPost .btn-success {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#cardPopover {
+  border: none;
+}
+
+.card {
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
