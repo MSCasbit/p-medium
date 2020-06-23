@@ -179,7 +179,7 @@ const getPost = () => {
                 }
                 dataArray.push(postRecent)
             }
-            console.log(dataArray)
+           
             const sortedArticle = dataArray.sort(function (a, b) {
                 const aDate = a.date
                 const bDate = b.date
